@@ -3,7 +3,7 @@
     package="com.marcelo.applistadecompras">
 
     <application
-        android:name=".AppApplication"
+        android:name=".view.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.marcelo.applistadecompras.MainActivity"
+            android:name="com.marcelo.applistadecompras.view.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>

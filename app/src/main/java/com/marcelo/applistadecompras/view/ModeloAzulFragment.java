@@ -1,4 +1,4 @@
-package com.marcelo.applistadecompras;
+package com.marcelo.applistadecompras.view;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -10,12 +10,14 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.marcelo.applistadecompras.R;
 
-public class ModeloPretoFragment extends Fragment {
+
+public class ModeloAzulFragment extends Fragment {
 
     View view;
 
-    public ModeloPretoFragment() {
+    public ModeloAzulFragment() {
     }
 
 
@@ -29,7 +31,7 @@ public class ModeloPretoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view =  inflater.inflate(R.layout.fragment_preto, container, false);
+        view = inflater.inflate(R.layout.fragment_azul, container, false);
 
         TextView txtTitulo = view.findViewById(R.id.txtTitulo);
 

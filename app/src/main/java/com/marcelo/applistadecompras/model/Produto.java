@@ -22,13 +22,11 @@ public class Produto extends RealmObject {
     @Required
     private String unidadeDeMedida;
 
-
     private double quantidade;
-
 
     private double precoPago;
 
-    private  String codigoDeBarras;
+    private String codigoDeBarras;
 
     private byte[] imagemProduto;
 

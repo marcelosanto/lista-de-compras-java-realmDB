@@ -1,4 +1,4 @@
-package com.marcelo.applistadecompras;
+package com.marcelo.applistadecompras.view;
 
 import android.app.Application;
 import android.util.Log;
@@ -22,7 +22,7 @@ public class AppApplication extends Application {
                 .schemaVersion(DB_VERSION)
                 .allowWritesOnUiThread(true)
                 .build();
-        
+
         Realm realm = Realm.getInstance(config);
 
         Log.d("db_log", "onCreate: Realm create success!" + " - versão: " + DB_VERSION);
