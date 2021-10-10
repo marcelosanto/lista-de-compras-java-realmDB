@@ -25,7 +25,7 @@ public class AppApplication extends Application {
         
         Realm realm = Realm.getInstance(config);
 
-        Log.d("db_log", "onCreate: Reaml create success!" + " - versão: " + DB_VERSION);
+        Log.d("db_log", "onCreate: Realm create success!" + " - versão: " + DB_VERSION);
 
 
     }
