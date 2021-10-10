@@ -2,10 +2,12 @@ package com.marcelo.applistadecompras.controller;
 
 import com.marcelo.applistadecompras.model.Categoria;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
+import io.realm.exceptions.RealmException;
 
 public class CategoriaController implements ICrud<Categoria> {
     @Override
@@ -76,6 +78,26 @@ public class CategoriaController implements ICrud<Categoria> {
 
     @Override
     public List<Categoria> listar() {
-        return null;
+        Realm realm = null;
+
+        RealmResults<Categoria> results = null;
+
+        List<Categoria> list = new ArrayList<>();
+
+        try {
+
+            realm = Realm.getDefaultInstance();
+
+            results = realm.where(Categoria.class).findAll();
+
+            list = realm.copyToRealm(results);
+
+        } catch (RealmException e) {
+
+        } finally {
+            realm.close();
+        }
+
+        return list;
     }
 }
