@@ -24,4 +24,52 @@ public class Categoria extends RealmObject {
 
     @Ignore
     private List<Categoria> categorias;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNomeDaCategoria() {
+        return nomeDaCategoria;
+    }
+
+    public void setNomeDaCategoria(String nomeDaCategoria) {
+        this.nomeDaCategoria = nomeDaCategoria;
+    }
+
+    public int getTotalDeProdutos() {
+        return totalDeProdutos;
+    }
+
+    public void setTotalDeProdutos(int totalDeProdutos) {
+        this.totalDeProdutos = totalDeProdutos;
+    }
+
+    public byte[] getImagemCategoria() {
+        return imagemCategoria;
+    }
+
+    public void setImagemCategoria(byte[] imagemCategoria) {
+        this.imagemCategoria = imagemCategoria;
+    }
+
+    public List<String> getTituloCategoriaSpinner() {
+        return tituloCategoriaSpinner;
+    }
+
+    public void setTituloCategoriaSpinner(List<String> tituloCategoriaSpinner) {
+        this.tituloCategoriaSpinner = tituloCategoriaSpinner;
+    }
+
+    public List<Categoria> getCategorias() {
+        return categorias;
+    }
+
+    public void setCategorias(List<Categoria> categorias) {
+        this.categorias = categorias;
+    }
 }
