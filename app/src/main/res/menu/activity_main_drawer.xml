@@ -5,15 +5,15 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:id="@+id/nav_preto"
+        <item android:id="@+id/nav_meus_protudos"
             android:icon="@drawable/ic_item_menu_padrao"
             android:title="Fragmento Preto" />
 
-        <item android:id="@+id/nav_vermelho"
+        <item android:id="@+id/nav_minhas_compras"
             android:icon="@drawable/ic_item_menu_padrao"
             android:title="Fragmento Vermelho" />
 
-        <item android:id="@+id/nav_azul"
+        <item android:id="@+id/nav_compartilhar"
             android:icon="@drawable/ic_item_menu_padrao"
             android:title="Fragmento Azul" />
 

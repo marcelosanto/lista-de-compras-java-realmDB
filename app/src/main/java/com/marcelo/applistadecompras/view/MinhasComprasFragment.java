@@ -13,11 +13,11 @@ import androidx.fragment.app.Fragment;
 import com.marcelo.applistadecompras.R;
 
 
-public class ModeloVermelhoFragment extends Fragment {
+public class MinhasComprasFragment extends Fragment {
 
     View view;
 
-    public ModeloVermelhoFragment() {
+    public MinhasComprasFragment() {
     }
 
 
@@ -31,7 +31,7 @@ public class ModeloVermelhoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_vermelho, container, false);
+        view = inflater.inflate(R.layout.fragment_minhas_compras, container, false);
 
         TextView txtTitulo = view.findViewById(R.id.txtTitulo);
 
